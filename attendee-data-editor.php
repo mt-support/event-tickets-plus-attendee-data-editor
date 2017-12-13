@@ -1,30 +1,31 @@
 <?php
 /**
- * Plugin name: Attendee Data Editor
- * Description: Adds tools to edit or add attendee data from the admin attendee screen, building on facilities already provided by Event Tickets Plus.
- * Version:     1.2
- * Author:      Modern Tribe, Inc (Support Team)
- * Author URI:  https://theeventscalendar.com
- * License:     GPLv3
+ * Plugin Name:       Event Tickets Plus Extension: Attendee Data Editor
+ * Description:       Provides facilities to edit submitted custom attendee data.
+ * Version:           1.3.0
+ * Extension Class:   Tribe__Extension__Attendee_Data_Editor
+ * Author:            Modern Tribe, Inc.
+ * Author URI:        http://m.tri.be/1971
+ * License:           GPLv2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * GitHub Plugin URI: mt-support/event-tickets-plus-attendee-data-editor
  *
- *     Attendee Data Editor for Event Tickets Plus
- *     Copyright (C) 2018 Modern Tribe, Inc
- *
- *     This program is free software; you can redistribute it and/or modify
+ *     Attendee Data Editor is free software: you can redistribute it and/or modify
  *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation; either version 2 of the License, or
- *     (at your option) any later version.
+ *     the Free Software Foundation, either version 2 of the License, or
+ *     any later version.
  *
- *     This program is distributed in the hope that it will be useful,
+ *     Attendee Data Editor is distributed in the hope that it will be useful,
  *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License along
- *     with this program; if not, write to the Free Software Foundation, Inc.,
- *     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
+/**
+ * Provides access to the Attendee Data Editor object.
+ *
+ * @return Tribe__Tickets__Attendee_Data_Editor__Main
+ */
 function tribe_attendee_data_editor() {
 	static $main;
 
